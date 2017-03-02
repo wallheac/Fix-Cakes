@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Cookies",
+    "description": "Chocolate chip or Snickerdoodle.",
+    "type": "Other"
+  },
+  {
+    "name": "Chocolate Cake",
+    "description": "A rich moist chocolate cake with a chocolate buttercream icing. Most, delicious and everything in between.",
+    "type": "Cake"
+  },
+  {
+    "type": "Cake",
+    "name": "German Chocolate Cake",
+    "description": "Three moist layers of chocolate cake, with a sweet and gooey carmel coconut frosting."
+  },
+  {
+    "name": "Banana Nut Bread",
+    "description": "Moist, sweet bread with smashed bananas and an overload of crushed walnuts.",
+    "type": "Other"
+  },
+  {
+    "name": "Toasted Almond",
+    "description": "A traditional, simple crowd-pleaser topped with a rich, cooked brown sugar frosting.",
+    "type": "Cake"
+  },
+  {
+    "description": "A customer favorite! Dense, rich, rustic, walnut-studded and carrot-flecked. Topped with cream cheese frosting.",
+    "name": "Carrot Cake",
+    "type": "Cake"
+  },
+  {
+    "name": "Tiramisu",
+    "description": "An authentic creation of rum and espresso-soaked ladyfingers layered with mascarpone custard and whipped cream.",
+    "type": "Cake"
+  },
+  {
+    "name": "Gooey Butter Cake",
+    "description": "Traditional rich gooey butter topped with a dollop of cream cheese frosting.",
+    "type": "Other"
+  },
+  {
+    "name": "Peanut Butter Chocolate",
+    "description": "Out traditional rich chocolate cake layered with a whipped peanut butter frosting.",
+    "type": "Cake"
+  },
+  {
+    "name": "Lemon Cake",
+    "description": "A refreshing four layer cake, filled with lemon curd and covered with lemon frosting.",
+    "type": "Cake"
+  },
+  {
+    "description": "Two pillowy devil's-food cookies enclosing a cloud-like marshmallow filling.",
+    "name": "Whoopie Pies",
+    "type": "Other"
+  },
+  {
+    "name": "Birthday",
+    "description": "$5 off on your birthday",
+    "type": "Discount"
+  },
+  {
+    "name": "Red Velvet",
+    "type": "Cake",
+    "description": "A classic Southern cake that's slathered in cream cheese frosting and sprinkled with crushed pecans."
+  }
+]
