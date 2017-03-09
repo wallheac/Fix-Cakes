@@ -39,24 +39,82 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    z-index: -1;
-    position: static;
+  }
+  .info{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .description{
+    padding: 15% 0;
+  }
+  .description p{
+    font-family: 'Lato';
+    font-weight: 400;
+    padding: 0 10%;
+  }
+  h1{
+    font-family: "Oswald";
+    display: block;
+    font-weight: 400;
+    background-color: #d49b30;
+    font-size: 2.1em;
+    color: #f2f2f2;
+    padding: 0.4em;
+    margin: 0;
+    text-align: center;
+  }
+  .cakeType{
+    background-color: #c3bbac;
+  }
+  .cakeType p{
+    font-family:"Oswald";
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#f2f2f2;
+    font-size: 3.25em;
+    line-height: .83em;
+    text-align:center;
+    margin: 3% 0 10%
+  }
+  .cakeType img{
+    display: block;
+    margin: auto;
+    padding: 2em 0 0;
   }
 
 @media screen and (min-width: 600px){
 nav{
   flex-flow: row nowrap;
+  z-index: 1;
+  height: 215px;
 }
 nav ul{
   flex-flow: row nowrap;
   justify-content: space-around;
   order: 0;
 }
-
+.splash img{
+  height: 815px;
+}
 .splash{
-  position: absolute;
   top: 0;
-  height: auto;
+  height: 815px;
+  margin-top: -215px;
+}
+.info{
+  flex-direction: row;
+  margin-top: -76.88px;
 
+}
+.getFix{
+  width: 180px;
+  margin: auto;
+}
+.description{
+  flex: 1 1 0;
+}
+.cakeType{
+  flex: 1 1 0;
+  z-index: -1;
 }
 }
