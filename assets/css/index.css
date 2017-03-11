@@ -81,6 +81,76 @@
     margin: auto;
     padding: 2em 0 0;
   }
+  .schedule{
+    display: flex;
+    background-color: #8e5942;
+    align-items: center;
+  }
+  .schedule li{
+    list-style:none;
+    color: #f2f2f2;
+    font-family:"Oswald";
+    font-weight:200;
+    font-size: 2.1em;
+  }
+  .cakes{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .cakepic img{
+    width: 600px;
+  }
+  .cakepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+  }
+  .cakeText{
+    font-family: "Oswald";
+    font-weight: bold;
+    color: #c3bbac;
+    font-size: 2.5em;
+    line-height: .83em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2%;
+  }
+  img#bulb, #heart, #whisk{
+    display: block;
+    margin: auto;
+    height: 80px;
+    padding: 1em 0 0;
+  }
+  footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #be5f27;
+    color: #f2f2f2;
+    padding: 5% 0;
+    text-align: center;
+  }
+  #footerLogo{
+    width: 25%;
+    order: -1;
+  }
+  .address{
+    font-family:'Oswald';
+    font-weight: 200;
+    text-align: center;
+  }
+  #ftiIcons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  #ftiIcons img{
+    padding: 2%;
+  }
+
 
 @media screen and (min-width: 600px){
 nav{
@@ -103,8 +173,7 @@ nav ul{
 }
 .info{
   flex-direction: row;
-  margin-top: -76.88px;
-
+  margin-top: -103px;
 }
 .getFix{
   width: 180px;
@@ -112,9 +181,55 @@ nav ul{
 }
 .description{
   flex: 1 1 0;
+  padding-top: 20%;
 }
 .cakeType{
   flex: 1 1 0;
   z-index: -1;
+}
+.schedule{
+  height: 220px;
+}
+.schedule ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+.cakeText{
+  width: 30%;
+}
+.cakes{
+  flex-direction: row;
+}
+.cakes img{
+  height:400px;
+  width: auto;
+}
+.cakepic{
+  overflow:hidden;
+  flex: 2 1 auto;
+}
+#cake2{
+  flex-direction: row-reverse;
+}
+footer{
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2% 5%;
+}
+#footerLogo{
+  order: 0;
+  flex: 1 1 auto;
+  width: 100px;
+  padding: 0 5%;
+}
+.address{
+  flex: 1 1 auto;
+}
+.fti{
+  flex: 1 1 auto;
 }
 }
