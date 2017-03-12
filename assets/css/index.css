@@ -45,7 +45,7 @@
     flex-flow: column nowrap;
   }
   .description{
-    padding: 15% 0;
+    padding: 10% 0;
   }
   .description p{
     font-family: 'Lato';
@@ -187,6 +187,9 @@ nav ul{
   flex: 1 1 0;
   z-index: -1;
 }
+.cakeType img{
+  padding: 4em 0 2em;
+}
 .schedule{
   height: 220px;
 }
@@ -197,6 +200,9 @@ nav ul{
   flex-grow: 1;
   padding: 0;
   margin: 0;
+}
+.schedule li{
+  padding: 0 2%;
 }
 .cakeText{
   width: 30%;
@@ -222,7 +228,7 @@ footer{
 }
 #footerLogo{
   order: 0;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   width: 100px;
   padding: 0 5%;
 }
@@ -232,4 +238,19 @@ footer{
 .fti{
   flex: 1 1 auto;
 }
+}
+
+@media screen and (min-width: 820px){
+  .description p{
+    font-size: 1.3em;
+  }
+  .description{
+    padding-top: 10%
+  }
+  #ftiIcons{
+    justify-content:space-around;
+  }
+  #footerLogo{
+    padding: 0 10%;
+  }
 }
