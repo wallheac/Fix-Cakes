@@ -1,0 +1,228 @@
+body{
+  margin: 0;
+}
+nav{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.9;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+nav ul{
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  order: 1;
+}
+nav li{
+  list-style-type: none;
+  font-family: 'Lato Regular';
+  font-size: 1.06em;
+  color: #303030;
+  text-transform: uppercase;
+  padding: .5em;
+}
+.splash img{
+  height: 200px;
+}
+.splash{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+h1{
+    font-family: "Oswald";
+    display: block;
+    font-weight: 400;
+    background-color: #d49b30;
+    font-size: 2.1em;
+    color: #f2f2f2;
+    padding: 0.4em;
+    margin: 0;
+    text-align: center;
+}
+.carter{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.basso{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.williamson{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.bakerPic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background-color: #e0d7c5;
+  overflow: hidden;
+}
+.bakerPic img{
+  height: 300px;
+  padding-top: 5%;
+}
+.bakerText{
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 5% 10% 10%;
+}
+h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #8e5942;
+}
+h3{
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #8e5942;
+}
+.customOrder{
+  background-color: #8e5942;
+  color: #f2f2f2;
+  font-family:"Oswald";
+  text-align: center;
+  padding: 5%;
+}
+footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #be5f27;
+  color: #f2f2f2;
+  padding: 5% 0;
+  text-align: center;
+}
+#footerLogo{
+  width: 25%;
+  order: -1;
+}
+.address{
+  font-family:'Oswald';
+  font-weight: 200;
+  text-align: center;
+}
+#ftiIcons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#ftiIcons img{
+  padding: 2%;
+}
+
+
+@media screen and (min-width: 600px){
+  nav{
+    flex-flow: row nowrap;
+    z-index: 1;
+    height: 215px;
+  }
+  nav ul{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    order: 0;
+  }
+  .splash img{
+    height: 405px;
+  }
+  .splash{
+    top: 0;
+    height: 405px;
+    margin-top: -215px;
+  }
+  .meetBakers{
+      width: 250px;
+      margin: auto;
+  }
+  h1{
+    position: relative;
+    z-index: 1;
+  }
+  .bakers{
+    margin-top: -76.88px;
+  }
+  .carter{
+    flex-direction: row;
+  }
+  .carter a{
+    padding: 0 5% 5%;
+  }
+  .basso{
+    flex-direction: row-reverse;
+  }
+  .williamson{
+    flex-direction: row;
+  }
+  .bakerText{
+    padding: 0;
+    flex: 1 1 0;
+  }
+  .bakerText p, h2, h3{
+    padding: 0 5%;
+    margin: 5px 0;
+  }
+  .bakerText h2{
+    padding-top: 30%;
+  }
+  .bakerText p{
+    padding-bottom: 5%;
+  }
+  #carterText{
+    padding-bottom: 5%;
+  }
+  .bakerPic{
+    flex: 1 0 0;
+    height: 400px;
+  }
+  .bakerPic img{
+    height: 400px;
+  }
+  footer{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 5%;
+  }
+  #footerLogo{
+    order: 0;
+    flex: 0 1 auto;
+    width: 100px;
+    padding: 0 5%;
+  }
+  .address{
+    flex: 1 1 auto;
+  }
+  .fti{
+    flex: 1 1 auto;
+  }
+  }
+  @media screen and (min-width: 820px){
+    .bakerPic{
+      height: 530px;
+    }
+    .bakerPic img{
+      height: 530px;
+    }
+    .bakerText p, a{
+      font-size: larger;
+    }
+    #ftiIcons{
+      justify-content:space-around;
+    }
+    #footerLogo{
+      padding: 0 10%;
+    }
+  }
