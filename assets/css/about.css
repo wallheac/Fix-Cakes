@@ -25,9 +25,12 @@ nav li{
   list-style-type: none;
   font-family: 'Lato';
   font-size: 1.06em;
-  color: #303030;
   text-transform: uppercase;
   padding: .5em;
+}
+nav li a{
+  color: #303030;
+  text-decoration: none;
 }
 .splash img{
   height: 200px;
