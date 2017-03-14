@@ -43,11 +43,137 @@ nav li{
 h1{
     font-family: "Oswald";
     display: block;
-    font-weight: 400;
     background-color: #d49b30;
     font-size: 2.1em;
-    color: #f2f2f2;
+    color: white;
     padding: 0.4em;
     margin: 0;
     text-align: center;
+}
+#cakes{
+  font-weight: 400;
+}
+#other{
+  font-weight: 200;
+  background-color:white;
+  color: #d49b30;
+}
+.cakes{
+  background-color:#f2f2f2;
+  padding: 10% 5%;
+}
+.cakes h2{
+  color: #8e5942;
+  font-family: 'Lato';
+  font-weight:bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+.cakes p{
+  font-family: 'Lato';
+  padding-bottom: 10%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+/*is there a way to combine first- and last-of-type?*/
+.cakes p:first-of-type{
+  border-bottom-style: none;
+}
+.cakes p:last-of-type{
+  border-bottom-style: none;
+}
+.cakes a{
+  color: #d49b30;
+}
+footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #be5f27;
+  color: #f2f2f2;
+  padding: 5% 0;
+  text-align: center;
+}
+#footerLogo{
+  width: 25%;
+  order: -1;
+}
+.address{
+  font-family:'Oswald';
+  font-weight: 200;
+  text-align: center;
+}
+#ftiIcons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#ftiIcons img{
+  padding: 2%;
+}
+.fti p{
+  font-family:'Oswald';
+  font-weight: 200;
+}
+
+@media screen and (min-width: 600px){
+  nav{
+    flex-flow: row nowrap;
+    z-index: 1;
+    height: 215px;
+  }
+  nav ul{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    order: 0;
+  }
+  .splash img{
+    height: 405px;
+  }
+  .splash{
+    top: 0;
+    height: 405px;
+    margin-top: -215px;
+  }
+  .products{
+    text-align: center;
+  }
+  /*why is there a space between "cakes" and "other"*/
+  .products h1{
+    display: inline-block;
+  }
+  .cakes{
+    margin: -77px 10% 0;
+  }
+  .cakes p:first-of-type{
+    padding-top: 8%;
+  }
+  footer{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 5%;
+  }
+  #footerLogo{
+    order: 0;
+    flex: 0 1 auto;
+    width: 100px;
+    padding: 0 5%;
+  }
+  .address{
+    flex: 1 1 auto;
+  }
+  .fti{
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (min-width: 820px){
+  #ftiIcons{
+    justify-content:space-around;
+  }
+  #footerLogo{
+    padding: 0 10%;
+  }
 }
