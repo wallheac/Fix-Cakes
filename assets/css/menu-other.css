@@ -58,8 +58,16 @@ h1{
   background-color:white;
   color: #d49b30;
 }
+#cakes:hover{
+  font-weight: bold;
+}
 #other{
   font-weight: 400;
+  background-color:#d49b30;
+  color: white;
+}
+#other:hover{
+  font-weight: bold;
 }
 .other{
   background-color:#f2f2f2;
