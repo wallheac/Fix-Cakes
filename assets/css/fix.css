@@ -1,0 +1,520 @@
+body{
+  margin: 0;
+}
+nav{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.9;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+nav ul{
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  order: 1;
+}
+nav li{
+  list-style-type: none;
+  font-family: 'Lato';
+  font-size: 1.06em;
+  text-transform: uppercase;
+  padding: .5em;
+}
+nav li a{
+  color: #303030;
+  text-decoration: none;
+}
+.splash img{
+  height: 200px;
+}
+.splash{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+h1{
+    font-family: "Oswald";
+    font-weight: 400;
+    display: block;
+    background-color: #d49b30;
+    font-size: 2.1em;
+    color: white;
+    padding: 0.4em;
+    margin: 0;
+    text-align: center;
+}
+/*this is where the code for the different page contents is*/
+
+/*index page*/
+.index .splash img{
+  height: 400px;
+}
+.index .splash{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.info{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.index .description{
+  padding: 10% 0;
+}
+.index .description p{
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 0 10%;
+}
+.cakeType{
+  background-color: #c3bbac;
+}
+.cakeType p{
+  font-family:"Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#f2f2f2;
+  font-size: 3.25em;
+  line-height: .83em;
+  text-align:center;
+  margin: 3% 0 10%
+}
+.cakeType img{
+  display: block;
+  margin: auto;
+  padding: 2em 0 0;
+}
+.index .schedule{
+  display: flex;
+  background-color: #8e5942;
+  align-items: center;
+}
+.index .schedule li{
+  list-style:none;
+  color: #f2f2f2;
+  font-family:"Oswald";
+  font-weight:200;
+  font-size: 2.1em;
+}
+.indexCakes{
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.cakepic img{
+  width: 600px;
+}
+.cakepic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+.cakeText{
+  font-family: "Oswald";
+  font-weight: bold;
+  color: #c3bbac;
+  font-size: 2.5em;
+  line-height: .83em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2%;
+}
+img#bulb, #heart, #whisk{
+  display: block;
+  margin: auto;
+  height: 80px;
+  padding: 1em 0 0;
+}
+/*about page*/
+.carter{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.basso{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.williamson{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.bakerPic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background-color: #e0d7c5;
+  overflow: hidden;
+}
+.bakerPic img{
+  height: 300px;
+  padding-top: 5%;
+}
+.bakerText{
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 5% 10% 10%;
+}
+.about h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #8e5942;
+}
+.about h3{
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #8e5942;
+}
+/*menu-cakes and custom pages*/
+.products a{
+  text-decoration: none;
+}
+.menu-cakes #cakes{
+  font-weight: 400;
+}
+.menu-cakes #cakes:hover{
+  font-weight: bold;
+}
+.menu-cakes #other{
+  font-weight: 200;
+  background-color:white;
+  color: #d49b30;
+}
+.menu-cakes #other:hover{
+  font-weight: bold;
+}
+.cakes{
+  background-color:#f2f2f2;
+  padding: 10% 5%;
+}
+.cakes h2{
+  color: #8e5942;
+  font-family: 'Lato';
+  font-weight:bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+.cakes p{
+  font-family: 'Lato';
+  padding-bottom: 10%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+/*is there a way to combine first- and last-of-type?*/
+.cakes p:first-of-type{
+  border-bottom-style: none;
+}
+.cakes p:last-of-type{
+  border-bottom-style: none;
+}
+.cakes a{
+  color: #d49b30;
+}
+/*menu-other*/
+.menu-other #cakes{
+  font-weight: 200;
+  background-color:white;
+  color: #d49b30;
+}
+.menu-other #cakes:hover{
+  font-weight: bold;
+}
+.menu-other #other{
+  font-weight: 400;
+  background-color:#d49b30;
+  color: white;
+}
+.menu-other #other:hover{
+  font-weight: bold;
+}
+
+/*hours page*/
+.scheduleContainer{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.hours .schedule{
+  background-color: #e0d7c5;
+}
+.hours .schedule li{
+  list-style:none;
+  color: #8e5942;
+  font-family:"Oswald";
+  font-weight:200;
+  font-size: 2.1em;
+}
+.invitation{
+  font-family: 'Lato';
+  padding: 5% 5% 8%;
+}
+.invitation a{
+  color: #d49b30;
+  font-weight: bold;
+}
+
+.customOrder{
+  background-color: #8e5942;
+  color: #f2f2f2;
+  font-family:"Oswald";
+  text-align: center;
+  padding: 5%;
+}
+.customOrder a{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #be5f27;
+  color: #f2f2f2;
+  padding: 5% 0;
+  text-align: center;
+}
+#footerLogo{
+  width: 25%;
+  order: -1;
+}
+.address{
+  font-family:'Oswald';
+  font-weight: 200;
+  text-align: center;
+}
+#ftiIcons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#ftiIcons img{
+  padding: 2%;
+}
+.fti p{
+  font-family:'Oswald';
+  font-weight: 200;
+}
+
+@media screen and (min-width: 600px){
+  nav{
+    flex-flow: row nowrap;
+    z-index: 1;
+    height: 215px;
+  }
+  nav ul{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    order: 0;
+  }
+  .splash img{
+    height: 405px;
+  }
+  .splash{
+    top: 0;
+    height: 405px;
+    margin-top: -215px;
+  }
+  /*the menu pages use their own code in class .products rather than the .subHead code*/
+  .subHead{
+    text-align: center;
+  }
+  .subHead h1{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+/*index page*/
+  .index .splash img{
+    height: 815px;
+  }
+  .index .splash{
+    top: 0;
+    height: 815px;
+    margin-top: -215px;
+  }
+  .info{
+    flex-direction: row;
+    margin-top: -103px;
+  }
+  .index .description{
+    flex: 1 1 0;
+    padding-top: 20%;
+  }
+  .cakeType{
+    flex: 1 1 0;
+    z-index: -1;
+  }
+  .cakeType img{
+    padding: 4em 0 2em;
+  }
+  .index .schedule{
+    height: 220px;
+  }
+  .index .schedule ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .index .schedule li{
+    padding: 0 2%;
+  }
+  .cakeText{
+    width: 30%;
+  }
+  .indexCakes{
+    flex-direction: row;
+  }
+  .index .cakes img{
+    height:400px;
+    width: auto;
+  }
+  .cakepic{
+    overflow:hidden;
+    flex: 2 1 auto;
+  }
+  #cake2{
+    flex-direction: row-reverse;
+  }
+  /*about page*/
+  .bakers{
+    margin-top: -76.88px;
+  }
+  .carter{
+    flex-direction: row;
+  }
+  .carter a{
+    padding: 0 5% 5%;
+  }
+  .basso{
+    flex-direction: row-reverse;
+  }
+  .williamson{
+    flex-direction: row;
+  }
+  .bakerText{
+    padding: 0;
+    flex: 1 1 0;
+  }
+  .bakerText p, h2, h3{
+    padding: 0 5%;
+    margin: 5px 0;
+  }
+  .bakerText h2{
+    padding-top: 30%;
+  }
+  .bakerText p{
+    padding-bottom: 5%;
+  }
+  #carterText{
+    padding-bottom: 5%;
+  }
+  .bakerPic{
+    flex: 1 0 0;
+    height: 400px;
+  }
+  .bakerPic img{
+    height: 400px;
+  }
+  /*menu-cakes page*/
+  .products{
+    text-align: center;
+  }
+  /*why is there a space between "cakes" and "other"*/
+  .products h1{
+    display: inline-block;
+  }
+  .cakes{
+    margin: -77px 10% 0;
+  }
+  .cakes p:first-of-type{
+    padding-top: 8%;
+  }
+  /*hours page*/
+  .scheduleContainer{
+    flex-direction: row;
+    margin-top: -77px;
+  }
+  .hours .schedule{
+    padding: 12% 5% 8%;
+    flex: 1 1 0;
+  }
+  .invitation{
+    padding: 12% 5% 8%;
+    flex: 1 1 0;
+  }
+
+
+  .customOrder{
+    font-size: 1.25em;
+  }
+  .hours .invitation{
+    font-size: 1.25em;
+  }
+  /*footer*/
+  footer{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 5%;
+  }
+  #footerLogo{
+    order: 0;
+    flex: 0 1 auto;
+    width: 100px;
+    padding: 0 5%;
+  }
+  .address{
+    flex: 1 1 auto;
+  }
+  .fti{
+    flex: 1 1 auto;
+  }
+
+  @media screen and (min-width: 820px){
+    /*index page*/
+    .index .description p{
+      font-size: 1.3em;
+    }
+    .index .description{
+      padding-top: 10%
+    }
+    /*menu page*/
+    .cakes{
+      margin-top: -92px;
+    }
+    /*about page*/
+    .bakerPic{
+      height: 530px;
+    }
+    .bakerPic img{
+      height: 530px;
+    }
+    .bakerText p, a{
+      font-size: larger;
+    }
+    /*footer*/
+    #ftiIcons{
+      justify-content:space-around;
+    }
+    #footerLogo{
+      padding: 0 10%;
+    }
+  }

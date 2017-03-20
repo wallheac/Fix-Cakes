@@ -133,10 +133,10 @@ footer{
     height: 405px;
     margin-top: -215px;
   }
-  .hours{
+  .subHead{
     text-align: center;
   }
-  .hours h1{
+  .subHead h1{
     display: inline-block;
     position: relative;
     z-index: 1;
