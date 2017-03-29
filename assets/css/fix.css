@@ -198,6 +198,9 @@ img#bulb, #heart, #whisk{
 .menu-cakes #other:hover{
   font-weight: bold;
 }
+#otherMenu{
+  display: none;
+}
 .cakes{
   background-color:#f2f2f2;
   padding: 10% 5%;
@@ -227,24 +230,39 @@ img#bulb, #heart, #whisk{
 .cakes a{
   color: #d49b30;
 }
-/*menu-other*/
-.menu-other #cakes{
-  font-weight: 200;
-  background-color:white;
-  color: #d49b30;
+/*custom page - form*/
+.customForm{
+  display: flex;
+  flex-flow:column nowrap;
 }
-.menu-other #cakes:hover{
+.customForm label{
+  font-family: 'Lato';
   font-weight: bold;
+  padding: 2% 0;
 }
-.menu-other #other{
-  font-weight: 400;
-  background-color:#d49b30;
+.custom input{
+  border-style: none;
+  box-shadow: 3px 3px 1px 0 #d6d7d8;
+}
+#name, #phone{
+  color: #d6d7d8;
+  height: 30px;
+}
+#details{
+  height: 150px;
+}
+#submit{
+  font-family: 'Lato';
+  background-color: #be5f27;
   color: white;
+  font-size: 1.3rem;
+  padding: 15%;
+  margin-top: 20%;
 }
-.menu-other #other:hover{
-  font-weight: bold;
+.submitBtn{
+  padding-top: 2%;
+  margin: auto;
 }
-
 /*hours page*/
 .scheduleContainer{
   display: flex;
@@ -268,7 +286,6 @@ img#bulb, #heart, #whisk{
   color: #d49b30;
   font-weight: bold;
 }
-
 .customOrder{
   background-color: #8e5942;
   color: #f2f2f2;
@@ -314,20 +331,33 @@ footer{
 @media screen and (min-width: 600px){
   nav{
     flex-flow: row nowrap;
-    z-index: 1;
     height: 215px;
+    z-index: 2;
+    transition: height 0.5s;
   }
   nav ul{
     flex-flow: row nowrap;
     justify-content: space-around;
     order: 0;
   }
+  nav.scrolled{
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+
+  }
+  #logo.scrolled{
+    height: 90px;
+  }
   .splash img{
     height: 405px;
+    z-index: -1;
   }
   .splash{
     top: 0;
     height: 405px;
+    position: relative;
     margin-top: -215px;
   }
   /*the menu pages use their own code in class .products rather than the .subHead code*/
@@ -461,8 +491,6 @@ footer{
     padding: 12% 5% 8%;
     flex: 1 1 0;
   }
-
-
   .customOrder{
     font-size: 1.25em;
   }
@@ -509,6 +537,14 @@ footer{
     }
     .bakerText p, a{
       font-size: larger;
+    }
+    .customForm{
+      flex-flow: column wrap;
+      justify-content: flex-start;
+    }
+    #name, #phone{
+      flex: 0 1 50%;
+      width: 40%;
     }
     /*footer*/
     #ftiIcons{

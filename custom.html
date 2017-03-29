@@ -6,12 +6,13 @@
     <title>Fix Cakes</title>
     <link rel="stylesheet" href="./assets/css/fix.css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900|Oswald:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body class='custom'>
     <div class='navContainer'>
       <nav>
-        <p>
+
           <ul>
             <li><a href='menu-cakes.html'>menu</a></li>
             <li><a href='custom.html'>custom</a></li>
@@ -21,7 +22,7 @@
             <li><a href='about.html'>about</a></li>
             <li><a href='hours.html'>hours</a></li>
           </ul>
-        </p>
+      
       </nav>
       <picture class='splash'>
         <img src='./assets/images/fix-custom-hero.jpg' alt='tiramisu'>
@@ -51,10 +52,18 @@
         and creativity. Or if you aren't quite sure what you need, we are here
          guide you. Let us know what you're thinking.
         </p>
+        <form class='customForm'>
+          <label for='name'>Name</label>
+          <input type='text' name='name' id='name' placeholder="Name">
+          <label for='phone'>Phone Number</label>
+          <input type='text' name='phone' id='phone' placeholder="Phone Number">
+          <label for='details'>The Details</label>
+          <input type='text' name='details' id='details'>
+          <div class='submitBtn'>
+            <input type='submit' id='submit' value='Submit'>
+        </div>
+        </form>
       </div>
-    </div>
-    <div class="customForm">
-    </div>
     <footer>
       <div class="address">
         <p>27 Maryland Plaza<br>
