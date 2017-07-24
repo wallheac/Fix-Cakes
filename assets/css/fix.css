@@ -359,6 +359,7 @@ footer{
     height: 405px;
     position: relative;
     margin-top: -215px;
+    z-index: -1;
   }
   /*the menu pages use their own code in class .products rather than the .subHead code*/
   .subHead{
@@ -389,6 +390,7 @@ footer{
   .cakeType{
     flex: 1 1 0;
     z-index: -1;
+    margin-top: 26px;
   }
   .cakeType img{
     padding: 4em 0 2em;
@@ -524,10 +526,7 @@ footer{
     .index .description{
       padding-top: 10%
     }
-    /*menu page*/
-    .cakes{
-      margin-top: -92px;
-    }
+
     /*about page*/
     .bakerPic{
       height: 530px;
